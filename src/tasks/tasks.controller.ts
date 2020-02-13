@@ -7,11 +7,14 @@ import {
   Delete,
   Put,
   Query,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { TasksService } from './tasks.service';
 import { Task, TaskStatus } from './task.model';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
+import { TaskStatusValidationPipe } from './pipes/task-status-validation.pipe';
 
 // all path goes to '/tasks' will come to this controller, due to Decorator that marks a class as a Nest controller
 @Controller('tasks')
@@ -19,7 +22,7 @@ export class TasksController {
   constructor(private tasksService: TasksService) {}
 
   @Get()
-  getAllTasks(@Query() filterDto: GetTasksFilterDto): Task[] {
+  getAllTasks(@Query(ValidationPipe) filterDto: GetTasksFilterDto): Task[] {
     return Object.keys(filterDto).length
       ? this.tasksService.getTasksWithFilters(filterDto)
       : this.tasksService.getAllTasks();
@@ -31,6 +34,7 @@ export class TasksController {
   }
 
   @Post()
+  @UsePipes(ValidationPipe)
   createTask(@Body() createTaskDto: CreateTaskDto): Task {
     return this.tasksService.createTask(createTaskDto);
   }
@@ -38,7 +42,7 @@ export class TasksController {
   @Put('/:id/status')
   updateTaskById(
     @Param('id') id: string,
-    @Body('status') status: TaskStatus,
+    @Body('status', TaskStatusValidationPipe) status: TaskStatus,
   ): Task {
     return this.tasksService.updateTaskStatus(id, status);
   }
