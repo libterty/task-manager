@@ -1,9 +1,13 @@
 {
   "name": "nestjs-task-management",
-  "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "version": "0.0.2",
+  "description": "task-manager",
+  "author": "11",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:libterty/task-manager.git"
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
