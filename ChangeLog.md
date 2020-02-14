@@ -2,7 +2,8 @@
 
 ### New features
 
-- Adding Postgres connection and orm settings[``]
+- Adding Postgres connection and orm settings[`ea2bfb6f0d13d9ce3d2bb526c2f599161bab45f2`]
+- Refacotring  Tasks Modules CRUD with DB Query Support[``]
 
 ## Version 0.0.2 (2019-02-14)
 
