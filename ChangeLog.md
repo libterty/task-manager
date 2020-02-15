@@ -1,9 +1,16 @@
+## Version 0.0.4 (2019-02-14)
+
+### New features
+
+- Update readme and changelog[`6d883e3edf0d9d894cc40828f04d1fca54a5378e`](https://github.com/libterty/task-manager/commit/6d883e3edf0d9d894cc40828f04d1fca54a5378e)
+- Adding user signup function[`59dc8aebe184beef6e7440b4b7ca29ea34f280ae`](https://github.com/libterty/task-manager/commit/59dc8aebe184beef6e7440b4b7ca29ea34f280ae)
+
 ## Version 0.0.3 (2019-02-14)
 
 ### New features
 
-- Adding Postgres connection and orm settings[`ea2bfb6f0d13d9ce3d2bb526c2f599161bab45f2`]
-- Refacotring  Tasks Modules CRUD with DB Query Support[`407917ce5122738f440d9f853dcebb04f13bf1f1`]
+- Adding Postgres connection and orm settings[`ea2bfb6f0d13d9ce3d2bb526c2f599161bab45f2`](https://github.com/libterty/task-manager/commit/ea2bfb6f0d13d9ce3d2bb526c2f599161bab45f2)
+- Refacotring  Tasks Modules CRUD with DB Query Support[`407917ce5122738f440d9f853dcebb04f13bf1f1`](https://github.com/libterty/task-manager/commit/407917ce5122738f440d9f853dcebb04f13bf1f1)
 
 ## Version 0.0.2 (2019-02-14)
 
