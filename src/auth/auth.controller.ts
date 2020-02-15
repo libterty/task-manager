@@ -9,6 +9,8 @@ import {
 import { AuthCreditDto } from './dto/auth-credit.dto';
 import { AuthService } from './auth.service';
 import { AuthGuard } from '@nestjs/passport';
+import { GetUser } from './get-user.decorator';
+import { User } from './user.entity';
 
 @Controller('auth')
 export class AuthController {
@@ -16,8 +18,9 @@ export class AuthController {
 
   @Get('/test')
   @UseGuards(AuthGuard())
-  test(): object {
-    return { statusCode: 'success', message: 'auth test' };
+  test(@GetUser() user: User): { statusCode: string, message: string, user: object } {
+    const { id, username } = user;
+    return { statusCode: 'success', message: 'auth test', user: { id, username } };
   }
 
   @Post('/signup')
