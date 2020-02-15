@@ -18,9 +18,15 @@ export class AuthController {
 
   @Get('/test')
   @UseGuards(AuthGuard())
-  test(@GetUser() user: User): { statusCode: string, message: string, user: object } {
+  test(
+    @GetUser() user: User,
+  ): { statusCode: string; message: string; user: object } {
     const { id, username } = user;
-    return { statusCode: 'success', message: 'auth test', user: { id, username } };
+    return {
+      statusCode: 'success',
+      message: 'auth test',
+      user: { id, username },
+    };
   }
 
   @Post('/signup')
