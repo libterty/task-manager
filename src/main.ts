@@ -1,8 +1,11 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import * as morgan from 'morgan';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await app.listen(3000);
+  const port = 3000;
+  app.use(morgan('combined'));
+  await app.listen(port, () => console.log(`App is Running on ${port}`));
 }
 bootstrap();
