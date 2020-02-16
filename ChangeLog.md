@@ -1,7 +1,7 @@
 ## Version 0.0.5 (2019-02-14)
 
 ### New features
-
+- Adding log infromatino middleware[`c15e2e8715a0a2c757fb0d71c48d4fcff626a0d7`](https://github.com/libterty/task-manager/commit/c15e2e8715a0a2c757fb0d71c48d4fcff626a0d7)
 - Adding relation between task and user[`bad601ce59d47b8ee4183593691bddf342e7459e`](https://github.com/libterty/task-manager/commit/bad601ce59d47b8ee4183593691bddf342e7459e)
 - Formating and protect routes[`1d262498d2397f9078319a951dc7dd4ea44749ae`](https://github.com/libterty/task-manager/commit/1d262498d2397f9078319a951dc7dd4ea44749ae)
 - Adding decorator for getUser[`5a37a57fb87d5a88fb3d3bd24c737de3922b380a`](https://github.com/libterty/task-manager/commit/5a37a57fb87d5a88fb3d3bd24c737de3922b380a)
