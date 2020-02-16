@@ -2,6 +2,16 @@
 
 ### New features
 
+- Formating and protect routes[`1d262498d2397f9078319a951dc7dd4ea44749ae`](https://github.com/libterty/task-manager/commit/1d262498d2397f9078319a951dc7dd4ea44749ae)
+- Adding decorator for getUser[`5a37a57fb87d5a88fb3d3bd24c737de3922b380a`](https://github.com/libterty/task-manager/commit/5a37a57fb87d5a88fb3d3bd24c737de3922b380a)
+- Adding JWT[`9aae1eacb177ae3a48d749d6994c1b3fd4f812e0`](https://github.com/libterty/task-manager/commit/9aae1eacb177ae3a48d749d6994c1b3fd4f812e0)
+- Adding user signin feature[`a3eafdaac3cd873eaa8c6a8401e70b74cba5f7aa`](https://github.com/libterty/task-manager/commit/a3eafdaac3cd873eaa8c6a8401e70b74cba5f7aa)
+
+
+## Version 0.0.4 (2019-02-14)
+
+### New features
+
 - Update readme and changelog[`6d883e3edf0d9d894cc40828f04d1fca54a5378e`](https://github.com/libterty/task-manager/commit/6d883e3edf0d9d894cc40828f04d1fca54a5378e)
 - Adding user signup function[`59dc8aebe184beef6e7440b4b7ca29ea34f280ae`](https://github.com/libterty/task-manager/commit/59dc8aebe184beef6e7440b4b7ca29ea34f280ae)
 
