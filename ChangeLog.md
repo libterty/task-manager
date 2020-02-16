@@ -1,7 +1,8 @@
-## Version 0.0.4 (2019-02-14)
+## Version 0.0.5 (2019-02-14)
 
 ### New features
 
+- Adding relation between task and user[`bad601ce59d47b8ee4183593691bddf342e7459e`](https://github.com/libterty/task-manager/commit/bad601ce59d47b8ee4183593691bddf342e7459e)
 - Formating and protect routes[`1d262498d2397f9078319a951dc7dd4ea44749ae`](https://github.com/libterty/task-manager/commit/1d262498d2397f9078319a951dc7dd4ea44749ae)
 - Adding decorator for getUser[`5a37a57fb87d5a88fb3d3bd24c737de3922b380a`](https://github.com/libterty/task-manager/commit/5a37a57fb87d5a88fb3d3bd24c737de3922b380a)
 - Adding JWT[`9aae1eacb177ae3a48d749d6994c1b3fd4f812e0`](https://github.com/libterty/task-manager/commit/9aae1eacb177ae3a48d749d6994c1b3fd4f812e0)

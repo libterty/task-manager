@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable, NotFoundException, InternalServerErrorException } from '@nestjs/common';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 import { TaskRepository } from './task.repository';
@@ -47,7 +47,11 @@ export class TasksService {
       where: { id, userId: user.id },
     });
     task.status = status;
-    await task.save();
+    try {
+      await task.save();
+    } catch (error) {
+      throw new InternalServerErrorException(`message: ${error}`);
+    }
     return { statusCode: 200, success: 'update', task };
   }
 
