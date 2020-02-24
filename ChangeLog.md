@@ -1,3 +1,8 @@
+## Version 0.0.6 (2019-02-24)
+
+### New features
+- Adding configuration setting[`4ef6258e5cbcb7b5a95b30f2fe55df5450a5b486`](https://github.com/libterty/task-manager/commit/4ef6258e5cbcb7b5a95b30f2fe55df5450a5b486)
+
 ## Version 0.0.5 (2019-02-14)
 
 ### New features
