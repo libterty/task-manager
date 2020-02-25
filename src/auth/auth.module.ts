@@ -6,6 +6,8 @@ import { UserRepository } from './user.repository';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './jwt-strategy';
+import { ConfigService } from '../config/config.service';
+const configService = new ConfigService(`${process.env.NODE_ENV || 'development'}.env`);
 
 @Module({
   imports: [
@@ -13,7 +15,7 @@ import { JwtStrategy } from './jwt-strategy';
       defaultStrategy: 'jwt',
     }),
     JwtModule.register({
-      secret: 'test',
+      secret: configService.get('JWT_SECRET'),
       signOptions: {
         expiresIn: 3600,
       },
