@@ -21,7 +21,8 @@ export class TasksService {
     if (!result) {
       throw new NotFoundException(`Task with query "${filterDto}" not found`);
     }
-    return { statusCode: 200, success: 'find', result };
+    // return { statusCode: 200, success: 'find', result };
+    return result;
   }
 
   async getTaskById(id: number, user: User): Promise<object> {
@@ -31,7 +32,8 @@ export class TasksService {
     if (!result) {
       throw new NotFoundException(`Task with ID "${id}" not found`);
     }
-    return { statusCode: 200, success: `find "${id}" success`, result };
+    // return { statusCode: 200, success: `find "${id}" success`, result };
+    return result;
   }
 
   async createTask(createTaskDto: CreateTaskDto, user: User): Promise<object> {
@@ -39,7 +41,8 @@ export class TasksService {
     if (!result) {
       throw new NotFoundException(`Task not created`);
     }
-    return { statusCode: 201, success: 'create', result };
+    // return { statusCode: 201, success: 'create', result };
+    return result;
   }
 
   async updateTaskStatus(
@@ -56,7 +59,8 @@ export class TasksService {
     } catch (error) {
       throw new InternalServerErrorException(`message: ${error}`);
     }
-    return { statusCode: 200, success: 'update', task };
+    // return { statusCode: 200, success: 'update', task };
+    return task;
   }
 
   async deleteTaskById(id: number, user: User): Promise<object> {
